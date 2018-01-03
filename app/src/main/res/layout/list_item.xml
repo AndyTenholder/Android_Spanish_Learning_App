@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp">
+
+    <ImageView
+        android:id="@+id/imagebox"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@color/tan_background" />
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/imagebox"
+        android:id="@+id/text_container"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/miwok_text_view" />
+
+            <TextView
+                android:layout_below="@id/miwok_text_view"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/defualt_text_view" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_arrow_white_24dp" />
+
+    <TextView
+        android:layout_toRightOf="@id/imagebox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"/>
+
+
+</RelativeLayout>
